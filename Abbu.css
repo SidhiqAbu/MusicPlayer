@@ -1,0 +1,1038 @@
+
+/* body margin and padding setting to 0 values */
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color:#1b1e3c;
+/*	font-family: "Segoe UI", Arial, sans-serif;*/
+}
+
+/* Setting up the navigational bar .............*/
+a{
+	text-decoration: none;
+}
+
+nav{
+	width:100%;
+	height:10vh;
+	display: flex;
+	justify-content: space-between;
+/*	border:5px solid red;*/
+	background-color: #1b1e3c;
+	color: white;
+	position: fixed;
+	margin-top: 0px;
+	top:0%;
+	z-index: 5;
+	overflow: hidden;
+
+}
+
+.button-Search{
+	display: flex;
+	justify-content: space-between;
+/*	border:1px dotted black;*/
+	margin-top: 10%;
+	color: white;
+	background-color: #0e155e;
+	border-radius: 20px;
+	padding: 3%;
+	margin-right: -8%;
+}
+input{
+	background-color:#0e155e;
+	border: 1px dashed #0e155e;
+	color: white;
+}
+img{
+	width:100%;
+	height:100%;
+}
+
+/*.inner-nav{
+	width: 3%;
+	height: 70%;
+}
+*/
+
+
+/* Setting up the main funtion of web page....... */
+
+
+/* setting main container flex and setting size of main function.....***************************************************************************************** */
+main{
+	display:flex;
+/*	flex-direction: column;*/
+/*	border:3px solid red;*/
+	width: 100%;
+	height: 90vh;
+	justify-content:space-between;
+	margin-top: 10vh;
+	padding: 0px;
+	background-color:#1b1e3c;
+/*	position: fixed;*/
+}
+
+/* giving width to main part in section ........ */
+.main-section{
+	width: 60%;
+	
+}
+
+
+
+/*  setting up the section scroll container properties.......... */
+.section-container{
+	width:95%;
+	height:90%;
+/*	border:2px solid red;*/
+/*	margin-top: 10vh;*/
+	margin-left: 10%;
+	margin-right: 10%;
+/*	background-color: #1b1e3c;*/
+	color:white;
+/*	text-align: center;*/
+	overflow: scroll;
+}
+
+.section-container::-webkit-scrollbar{
+	display: none;
+}
+
+
+.size-screen-controler{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* setting up container header.......propertiess */
+
+.section-header{
+	width:100%;
+	height:40%;
+/*	border: 1px dashed red;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+.section-header-img1{
+	width: 32%;
+	height: 95%;
+/*	border: 2px solid pink;*/
+}
+
+.section-header-img1:hover{
+	width: 34%;
+	height: 98%;
+	box-shadow: 0px 0px 3px 1px dimgray;
+}
+
+
+
+/* setting the properties of section-1 means Latest-release Songs.....*/  
+
+.latest-release{
+	width: 100%;
+	height: 55%;
+/*	border: 1px solid gray;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+/*	background-color: darkblue;*/
+	
+}
+
+
+.latest-release-1{
+	width: 48%;
+	height: 30%;
+/*	border: 2px solid chocolate;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.latest-release-inner{
+	width: 20%;
+	height: 100%;
+/*	border: 1px dashed red;*/
+	text-align: center;
+	color: white;
+/*	background-color: darkblue;*/
+	position: relative;
+}
+
+
+
+.latest-release-inner h1,p{
+	margin: 0px;
+}
+.latest-release-inner h1{
+	margin-top: 20%;
+}
+.dot{
+	text-align: right;
+}
+
+.latest-release-1:hover{
+	box-shadow: 0px 0px 3px 1px white;
+}
+
+/* ************      Implimentation of drowp down list *************** */
+.latest-release-dropdown{
+	position:relative;
+	background-color:ghostwhite;
+/*	color: white;*/
+	padding: 5%;
+	margin-left: -80%;
+/*	border: 2px solid; black;*/
+	display: none;
+	
+	transition: all ease-in-out 1.25s;
+
+
+}
+.drop-item{
+	padding: 2%;
+	text-align: center;
+}
+.latest-release-dropdown .drop-item,a{
+	color: blue;
+	text-decoration: none;
+}
+
+.latest-release-dropdown:target{
+	display: block;
+}
+.latest-release-dropdown:hover{
+	color: red;
+}
+
+
+.play1{
+	position:relative;
+	z-index: 2;
+	top:-104%;
+	left: -1%;
+	font-size: xx-large;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	border-radius: 50%;*/
+	width: 100%;
+	height: 100%;
+/*	border: 2px solid green;*/
+	opacity: 0;
+}
+
+
+.play1>a{
+	color: white;
+}
+
+
+.play1:hover{
+	opacity: 1;
+	background-image: linear-gradient(0deg,rgb(201, 200, 185) -66%, rgba(0, 0, 0, 0));
+}
+
+
+
+
+/* Popular Artist container properties setting using CSS properties.... */
+
+.popular-artists{
+	width: 100%;
+	height: 30%;
+/*	border: 3px dashed chocolate;*/
+	display: flex;
+	justify-content: space-evenly;
+/*	background-color: darkblue;*/
+}
+
+.popular-artists-inner{
+	width: 14%;
+	height: 100%;
+/*	border: 3px solid black;*/
+/*	border-radius: 50%;*/
+}
+
+.popular-artists-img{
+	width:100%;
+	height:70%;
+/*	border-radius: 50%;*/
+/*	border:3px dotted red ;*/
+}
+
+
+
+.play{
+	position:relative;
+	z-index: 2;
+	top:-104%;
+	left: -1%;
+	font-size: xx-large;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+/*	border: 2px solid green;*/
+	opacity: 0;
+}
+
+
+.play>a{
+	color: white;
+}
+
+
+.play:hover{
+	opacity: 1;
+	background-image: linear-gradient(0deg,rgb(201, 200, 185) -66%, rgba(0, 0, 0, 0));
+}
+
+.Artists-name{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+/*	border: 3px dotted gray;*/
+	color: white;
+}
+
+.popular-artists-img img{
+	border-radius: 50%;
+}
+
+
+/* Setting up the music thems in main sections...... */
+
+
+.music-themes{
+	width: 100%;
+	height: 50%;
+/*	border:3px dotted chocolate;*/
+	margin-top:10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-image: linear-gradient(90deg,#833ab4,#fd1d1d,#fcb045);
+}
+
+
+
+/* Music --box design...  */ 
+.music-stations{
+	width:15%;
+	height: 60%;
+/*	border: 2px solid cyan;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.stations-container{
+	width: 100%;
+	height: 60%;
+/*	border: 2px dashed chocolate;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: darkslateblue;
+
+}
+
+.inner-station-1{
+	width: 80%;
+	height: 120%;
+	background-color: lightgreen;
+	
+}
+.inner-station-2{
+/*	position: relative;*/
+	width: 80%;
+	height: 115%;
+/*	border: 2px dashed red;*/
+	background-color: darkorange;
+	margin-left: 10%;
+	margin-top: -9%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+}
+.inner-station-3{
+	width: 66%;
+	height: 40%;
+	border-radius: 50%;
+/*	border: 1px solid chocolate;*/
+	margin-top: 20%;
+	background-color: darkcyan;
+	
+}
+.inner-station-3 img{
+	border-radius: 50%;
+}
+
+
+
+
+
+/*  Music theme 5 types...............................	.................................*/
+.music-types{
+	width: 80%;
+	height: 90%;
+/*	border: 2px solid pink;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.music-types-number{
+	width:17%;
+	height: 48%;
+/*	border: 2px solid lightgreen;*/
+	border-radius: 50%;
+	position: relative;
+}
+
+.music-types-number img{
+	border-radius: 50%;
+}
+
+.numbers-name{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+/*	border: 2px solid pink;*/
+	top:0px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	font-size: 25px;*/
+	border-radius: 60%;
+	background-image: linear-gradient(0deg,rgb(201, 200, 185) -66%, rgba(0, 0, 0, 0));
+	transition: background-image 0.3s;
+}
+
+.numbers-name:hover{
+	background-image: none;
+}
+
+
+
+/* Setting up the music them second of types Party, Electronics,Travel..... */
+
+
+.music-themes1{
+	margin-top: 5%;
+	width: 100%;
+	height: 40%;
+/*	border: 2px dashed blue;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.music-themes-types{
+	width: 30%;
+	height: 80%;
+/*	border: 2px solid chocolate;*/
+	background-size: cover;
+}
+.theme-name{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+/*	border: 2px dashed red;*/
+	color: white;
+}
+
+.num-1{
+	background-image: url("pic-3.jpg");
+/*	width: 100%;*/
+/*	height: 100%;*/
+}
+.num-2{
+	background-image: url("pic-6.jpg");
+}
+.num-3{
+	background-image: url("pic-9.jpg");
+}
+
+.music-themes-types:hover{
+	box-shadow: 0px 0px 5px 2px;
+	width: 32%;
+	height: 82%;
+
+}
+
+
+/******Lastest English ............... List creation..***************************************/
+
+.latest-english{
+	width: 100%;
+	height: 30%;
+/*	border: 3px dashed chocolate;*/
+	display: flex;
+	justify-content: space-evenly;
+/*	background-color: darkblue;*/
+}
+
+.latest-english-inner-div{
+	width: 15%;
+	height: 100%;
+/*	border: 3px solid black;*/
+/*	border-radius: 50%;*/
+}
+
+.english-songs-img{
+	width:100%;
+	height:80%;
+/*	border-radius: 50%;*/
+/*	border:3px dotted red ;*/
+}
+.english-songs-names{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+/*	border: 3px dotted gray;*/
+	color: white;
+}
+
+.english-songs-img:hover{
+	box-shadow: 0px 0px 3px 3px white;
+}
+
+
+
+
+
+
+
+/******* ...Latest Hindi Play list  creation....... ***********************************/
+
+.latest-hindi{
+	width: 100%;
+	height: 30%;
+/*	border: 3px dashed chocolate;*/
+	display: flex;
+	justify-content: space-evenly;
+/*	background-color: darkblue;*/
+}
+
+.latest-hindi-inner-div{
+	width: 15%;
+	height: 100%;
+/*	border: 3px solid black;*/
+/*	border-radius: 50%;*/
+}
+
+.hindi-songs-img{
+	width:100%;
+	height:80%;
+/*	border-radius: 50%;*/
+/*	border:3px dotted red ;*/
+}
+.hindi-songs-names{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+/*	border: 3px dotted gray;*/
+	color: white;
+}
+.hindi-songs-img:hover{
+	box-shadow: 0px 0px 3px 3px white;
+}
+
+
+/******** setting aside bar properties............ *******/
+
+aside{
+	width: 35%;
+	background-color: #1b1e3c;
+
+}
+
+
+/*  ***************   Aside Part Creation  ************** ***************************************************************************************  */
+
+.Playlist-container{
+	width: 80%;
+	height: 90%;
+/*	margin-top: 10vh;*/
+/*	border: 5px dashed red;*/
+	margin-left: 10%;
+	color: white;
+}
+
+.item-list{
+	width: 100%;
+	height: 88%;
+/*	border: 2px solid pink;*/
+	overflow: scroll;
+}
+
+.asid-screen-controler{
+	width: 100%;
+	height: 100%;
+}
+
+.item-list::-webkit-scrollbar{
+	display: none;
+}
+.playlist-header{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.playlist-header h4 a {
+	color:lightgreen;
+	text-decoration: none;
+}
+
+.queue-options{
+	position: fixed;
+	background-color: #f8f9fa;
+	box-sizing: border-box;
+	right: 4%;
+	top: 18%;
+	width: 10%;
+	height: auto;
+	padding: 1%;
+	overflow: hidden;
+	z-index: 2;
+	transition: all ease-in-out 0.25s;
+	display:none;
+}
+
+.queue-options:target{
+	width: 10%;
+	display: block;
+}
+.queue-options a{
+	text-decoration: none;
+}
+
+.songs-list{
+	width: 90%;
+	height: 15%;
+/*	border: 1px dashed white;*/
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.songs-count{
+	width: 10%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+/*	border: 2px dashed white;*/
+}
+
+.songs-img{
+	width: 25%;
+	height: 100%;
+/*	border: 2px dashed pink;*/
+}
+.songs-name{
+	width: 40%;
+	height: 80%;
+/*	border: 2px dashed red;*/
+}
+.songs-name h4{
+	margin-bottom: 0px;
+}
+
+.songs-list:hover{
+	box-shadow: 0px 0px 3px 2px white;
+}
+
+
+/**************************************  my profile play list and footer part ************************************************************************************/
+
+/****************************************** my play list area******************************************** */
+
+
+#my-playlist{
+	display:none;
+	width: 100%;
+	height: 0px;
+	transition: height 0.1s ease-in-out;
+}
+
+
+#my-playlist:target{
+	display: flex;
+	width: 100%;
+	position:fixed;
+	top: 0vh;
+	height: 90vh;
+	background-color: #1b1e3c;
+	z-index: 2;
+}
+
+.my-profile-corner{
+	width: 3%;
+	height: 100%;
+	margin-top: 12vh;
+/*	border: 2px solid lightgreen;*/
+	text-align: center;
+	color: white;
+}
+
+.my-profile-corner i{
+	color: white;
+}
+
+.my-profile-section{
+	width: 65%;
+	height: 88%;
+	margin-top: 10vh;
+/*	border: 1px solid cyan;*/
+	text-align: center;
+}
+
+.my-profile-container{
+	width: 90%;
+	height: 98%;
+	margin-left: 5%;
+	margin-top: 1%;
+/*	border: 2px dashed #ebd61c;*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: space-around;*/
+	overflow: scroll;
+/*	text-align: center;*/
+}
+
+.my-profile-container::-webkit-scrollbar{
+	display: none;
+}
+
+
+/***************** my music profile header*********** ********************************************************************************************/
+.my-profile-header{
+	width: 95%;
+	height: 50%;
+/*	border: 2px dashed lightgreen;*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+/*	margin-bottom: 2%;*/
+	margin: 2%;
+	color: white;
+}
+
+.corosal-img{
+	display: flex;
+	justify-content: center;
+	overflow: scroll;
+	align-items: center;
+}
+.corosal-img>img{
+	width: 100%;
+	height: 100%;
+}
+
+.corosal-img::-webkit-scrollbar{
+	display: none;
+}
+
+.text-header{
+	width: 98%;
+	margin-top:5%;
+	margin-right: 2%;
+/*	border:2px dotted red;*/
+	display: flex;
+	justify-content: space-between;
+}
+.text-header h1{
+	margin: 0px;
+}
+
+
+.btns{
+	width: 100%;
+	height: 15%;
+/*	border:2px dotted red;*/
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.first-btn{
+	margin-left: 2%;
+	background-image: linear-gradient(-19deg,red 0%,blue 100%);
+}
+
+.btn-size{
+	width: 20%;
+	height: 100%;
+	border: 0px;
+	color:white;
+	background-color:#1b1e3c;
+}
+
+.my-profile-header:hover{
+	box-shadow: 0px 0px 2px 2px white;
+}
+
+.corosal-img{
+	width: 30%;
+	height: 100%;
+/*	border: 1px dashed chocolate;*/
+/*	box-shadow: 0px 0px 50px 5px white inset ;*/
+}
+
+.text-para{
+	width: 68%;
+	height: 100%;
+/*	border: 2px dashed #fffde7;*/
+	text-align: left;
+}
+
+
+.songs-lists{
+	width: 95%;
+	height: 15%;
+/*	border: 2px dashed pink;*/
+	margin: 2%;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-size: 100%;
+}
+
+.songs-lists:hover{
+	box-shadow: 0px 0px 1px 1px white;
+}
+
+.numbers-count{
+	width: 8%;
+	height: 100%;
+/*	border:2px dotted red;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.numbers-imges1{
+	width: 10%;
+	height: 100%;
+/*	border: 2px dashed red;*/
+}
+
+
+.songs-lists-name{
+	width: 40%;
+	height: 100%;
+/*	border: 2px dashed red;*/
+	text-align: left;
+
+}
+
+.songs-lists-name h3{
+	margin-bottom:0px;
+}
+
+.timing{
+	width: 10%;
+	height: 100%;
+/*	border: 2px dashed red;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+
+
+/*************** aside part  *************----------------------------------------------------------------------------------------------*/
+
+.my-profile-aside{
+	width: 32%;
+	height: 100%;
+	margin-top: 10vh;
+/*	border: 2px solid black;*/
+}
+
+.my-profile-aside-container{
+	width: 98%;
+	height: 98%;
+	margin: 1%;
+/*	border: 1px dashed chocolate;*/
+	color: white;
+}
+
+.similar-Artist-container{
+	width: 98%;
+	height: 40%;
+/*	border: 2px dashed lightgreen;*/
+	overflow: scroll;
+	text-align: center;
+}
+
+.similar-Artist-container::-webkit-scrollbar{
+	display: none;
+}
+
+.numbers-imges12{
+	width: 15%;
+	height: 100%;
+}
+
+.recently-played-container{
+	width: 98%;
+	height: 35%;
+/*	border: 2px dashed deeppink;*/
+	overflow: scroll;
+	text-align: center;
+}
+
+.recently-played-container::-webkit-scrollbar{
+	display: none;
+}
+
+.similer-inner-div{
+	width: 95%;
+	height: 30%;
+	margin: 2%;
+/*	border: 2px dashed pink;*/
+	display: flex;
+	justify-content: space-between;
+}
+.similer-inner-div:hover{
+	box-shadow: 0px 0px 1px 1px white;
+	opacity: 0.8;
+}
+
+#footer1{
+	width: 100%;
+	height: 10vh;
+/*	border: 3px dashed lightgreen;*/
+	position: fixed;
+	bottom: 0px;
+	background-color:#32373f;
+	display: flex;
+	justify-content: space-evenly;
+	color:cornsilk;
+}
+
+
+
+/******************   Setting up the Footer section in footer part*       ****************************** */
+
+
+
+footer{
+/*	display: none;*/
+	width: 100%;
+	height: 0vh;
+/*	border: 3px dashed lightgreen;*/
+	position: fixed;
+	bottom: 0px;
+	background-color:#32373f;
+/*	opacity: 0.5;*/
+	display: flex;
+	justify-content: space-evenly;
+	color:cornsilk;
+	visibility: hidden;
+	transition: height 0.2s ease-in-out;
+	z-index: 5;
+}
+
+
+.active-song-description{
+	width: 20%;
+	height: 100%;
+/*	border: 2px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	color: white;
+    text-align: center;
+
+
+}
+
+.song-desc{
+	margin-top: 5%;
+}
+.player{
+	width: 50%;
+	height: 100%;
+/*	border: 2px solid red;*/
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+
+.control{
+	width: 30%;
+	height: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#slider-music{
+	width: 80%;
+	height: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.slide{
+	width: 80%;
+/*	border: 1px dashed red;*/
+}
+.slider{
+	width: 100%;
+}
+
+.sound-equalizer{
+	width: 25%;
+	height: 100%;
+/*	border: 2px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#footer:target{
+	visibility: visible;
+	height: 10vh;
+}
+
+.footer-caver-area{
+	width: 100%;
+	height:10vh;
+	visibility: hidden;
+	background-color: red;
+}
+
+
+
+
+
+
+/************************************************************ my profile area and footer part ending line*********************************************************/
+
+
+
+

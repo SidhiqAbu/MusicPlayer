@@ -1,0 +1,244 @@
+
+
+/***********************************************          Screean size less than 1400px width               ****************************************************/
+
+
+@media screen and (max-width:1400px){
+
+  .size-screen-controler{
+    height: 90%;
+  }
+
+}
+
+/********************************************             Screen size less than 1200px width               ****************************************************/
+
+
+@media screen and (max-width:1200px){
+  body{
+    font-size: 15px;
+  }
+
+  .size-screen-controler{
+    height: 80%;
+  }
+}
+
+/*****************************************           Screeen size less than 922px width............................*****************************************.......*/
+
+@media screen and (max-width: 920px) {
+
+  body{
+    font-size: 10px;
+  }
+  
+.size-screen-controler{
+  width: 100%;
+  height: 62%;
+/*  font-size: 10px;*/
+}
+
+
+.asid-screen-controler{
+    width: 100%;
+    height: 80%;
+}
+
+.my-profile-header{
+  border-color: red;
+  height: auto;
+}
+
+.songs-lists{
+  height: 10%;
+}
+
+.similer-inner-div{
+  height: 25%;
+}
+.recently-played-container{
+  height: 38%;
+}
+
+}
+
+/**********************************************        Screen size less than 720px  width           ******************************************************   */ 
+
+@media screen and (max-width:780px){
+  
+  footer{
+    font-size: 5px;
+  }
+
+  main{
+/*    border:2px solid green;*/
+    font-size: 8px;
+  }
+  main-section{
+    width: 80%;
+    border:2px solid green;
+  }
+  .size-screen-controler{
+  width: 100%;
+  height: 50%;
+
+}
+
+.section-container{
+  width: 100%;
+  margin: 0px;
+}
+
+aside{
+  width: 40%;
+}
+
+.item-list{
+height: 92%;
+
+}
+
+.songs-list{
+  height: 60px;
+}
+
+.corosal-img{
+  height: 155px;
+/*  border: 2px dashed blue;*/
+} 
+.btn-size{
+  width: 40%;
+}
+
+.active-song-description{
+  width: 30%;
+}
+.player{
+  width: 40%;
+}
+.sound-equalizer{
+width: 30%;
+}
+.fa-laptop{
+  visibility: hidden;
+  width: 0px;
+}
+
+}
+
+
+
+
+/*****************************   Screeen less then 620 px width   ******************/
+
+
+@media screen and (max-width:620px){
+  nav{
+/*    height: 7vh;*/
+  }
+  main{
+/*    border: 2px dashed pink;*/
+    display: block;
+    font-size: 8px;
+    margin-top: 8vh;
+  }
+  .my-profile-corner{
+/*    margin-top: 0px;*/
+    width: 100%;
+/*    position: absolute;*/
+      text-align: left;
+  }
+
+  .main-section{
+    width: 100%;
+    height: 40vh;
+    margin-top: 8vh;
+/*    font-size: 8px;*/
+  }
+
+  .size-screen-controler{
+    height: 350px;
+  }
+
+  aside{
+    width: 95%;
+    height: 47%;
+    margin-left: 2%;
+  }
+  .Playlist-container{
+    width: 100%;
+    margin: 0px;
+  }
+.item-list{
+  height: 82%;
+}
+
+.songs-img{
+  width: 15%;
+}
+
+.footer{
+  font-size: 20px;
+}
+
+
+#my-playlist{
+/*  display: block;*/
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.my-profile-section{
+  width: 100%;
+  height: 40vh;
+  margin-top: 0px;
+}
+.my-profile-aside{
+  width: 100%;
+  height: 40vh;
+  margin-top: 0px;
+}
+.my-profile-aside-container{
+  width: 100%;
+  
+}
+.similar-Artist-container{
+  height: 30%;
+}
+.recently-played-container{
+  height: 30%;
+}
+.songs-lists-name>h3{
+/*  margin-top: 0px;*/
+}
+
+.similer-inner-div{
+  height: 60px;
+}
+.my-profile-container{
+  width: 100%;
+  margin: 0px;
+}
+.songs-lists{
+  height: 15%;
+}
+
+.active-song-description{
+  width: 0%;
+  display: none;
+}
+
+.player{
+  width: 60%;
+}
+
+.sound-equalizer{
+  width: 40%;
+}
+.img-nav{
+  width: 0%;
+  display: none;
+}
+
+}
